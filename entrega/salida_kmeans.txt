@@ -1,0 +1,54 @@
+#####################################################
+# 3. K-MEANS (desafios_ml/kmeans_mpi.c)             #
+#####################################################
+
+--- Compilando version C: mpicc kmeans_mpi.c -o kmeans_c -lm ---
+--- Ejecucion con 4 procesos ---
+=== K-MEANS PARALELO CON MPI ===
+Centros iniciales: 
+C0: (5.16, 6.97)
+C1: (8.76, 2.92)
+C2: (2.19, 1.69)
+
+✅ Centros finales después de 20 iteraciones:
+Cluster 0: (4.28, 7.97) - 350 puntos
+Cluster 1: (8.04, 3.40) - 323 puntos
+Cluster 2: (2.55, 2.70) - 327 puntos
+
+--- Ejecucion con 2 procesos ---
+=== K-MEANS PARALELO CON MPI ===
+Centros iniciales: 
+C0: (9.74, 3.28)
+C1: (4.13, 7.27)
+C2: (1.86, 6.83)
+
+✅ Centros finales después de 20 iteraciones:
+Cluster 0: (6.76, 2.34) - 313 puntos
+Cluster 1: (6.68, 7.63) - 325 puntos
+Cluster 2: (1.88, 4.55) - 362 puntos
+
+--- Ejecucion con 5 procesos (1000 / 5 = 200) ---
+=== K-MEANS PARALELO CON MPI ===
+Centros iniciales: 
+C0: (9.74, 3.28)
+C1: (4.13, 7.27)
+C2: (1.86, 6.83)
+
+✅ Centros finales después de 20 iteraciones:
+Cluster 0: (6.76, 2.34) - 313 puntos
+Cluster 1: (6.68, 7.63) - 325 puntos
+Cluster 2: (1.88, 4.55) - 362 puntos
+
+--- Compilando version C++: mpic++ kmeans_mpi.cpp -o kmeans_cpp -lm ---
+--- Ejecucion C++ con 4 procesos ---
+=== K-MEANS PARALELO (C++) ===
+Puntos: 1000, Procesos: 4
+Centros iniciales:
+C0: (0.240638, 8.41772)
+C1: (5.90632, 9.14874)
+C2: (1.14187, 5.26729)
+
+✅ Centros finales tras 20 iteraciones:
+Cluster 0: (3.26822, 7.88532)  -  313 puntos
+Cluster 1: (8.1479, 5.01256)  -  375 puntos
+Cluster 2: (3.20787, 2.30921)  -  312 puntos

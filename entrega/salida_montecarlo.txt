@@ -1,0 +1,75 @@
+#####################################################
+# 2. MONTE CARLO PI (desafios_ml/montecarlo_pi)     #
+#####################################################
+
+--- Compilando version C ---
+--- Ejecucion con 1 proceso ---
+=== SIMULADOR PARALELO DE π (MONTE CARLO) ===
+Lanzamientos totales: 1000000 | Procesos: 1
+Proceso 0: aciertos = 785787
+
+🔵 Aciertos totales: 785787
+🔵 π estimado: 3.143148
+🔵 Error absoluto: 0.001555
+
+--- Ejecucion con 2 procesos ---
+=== SIMULADOR PARALELO DE π (MONTE CARLO) ===
+Lanzamientos totales: 1000000 | Procesos: 2
+Proceso 0: aciertos = 392908
+Proceso 1: aciertos = 392989
+
+🔵 Aciertos totales: 785897
+🔵 π estimado: 3.143588
+🔵 Error absoluto: 0.001995
+
+--- Ejecucion con 4 procesos ---
+=== SIMULADOR PARALELO DE π (MONTE CARLO) ===
+Lanzamientos totales: 1000000 | Procesos: 4
+Proceso 2: aciertos = 196300
+Proceso 0: aciertos = 196628
+Proceso 1: aciertos = 196497
+Proceso 3: aciertos = 196304
+
+🔵 Aciertos totales: 785729
+🔵 π estimado: 3.142916
+🔵 Error absoluto: 0.001323
+
+--- Ejecucion con 8 procesos ---
+=== SIMULADOR PARALELO DE π (MONTE CARLO) ===
+Lanzamientos totales: 1000000 | Procesos: 8
+Proceso 1: aciertos = 98137
+Proceso 3: aciertos = 98180
+Proceso 5: aciertos = 98055
+Proceso 6: aciertos = 98180
+Proceso 7: aciertos = 98442
+Proceso 0: aciertos = 98206
+Proceso 4: aciertos = 98340
+Proceso 2: aciertos = 98267
+
+🔵 Aciertos totales: 785807
+🔵 π estimado: 3.143228
+🔵 Error absoluto: 0.001635
+
+--- Compilando version C++ ---
+--- Ejecucion C++ con 4 procesos ---
+Proceso 1 aciertos: 196300
+Proceso 3 aciertos: 196403
+Proceso 0 aciertos: 196497
+Proceso 2 aciertos: 196304
+
+=== ESTIMACIÓN DE π ===
+Aciertos totales: 785504
+π ≈ 3.14202
+Error: 0.000423346
+
+--- Tiempos: 1 vs 4 procesos ---
+np=1:
+np=4:
+
+real	0m0.250s
+user	0m0.024s
+sys	0m0.034s
+
+real	0m0.258s
+user	0m0.046s
+sys	0m0.120s
